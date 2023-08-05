@@ -8,7 +8,7 @@ public enum Endpoints {
     add("/add"),
     getById("/id/"),
     all("/all"),
-    deleteById("/delete/%d");
+    deleteById("/delete/");
     private final String endpoint;
 
     public String getEndpoint(int id) {
