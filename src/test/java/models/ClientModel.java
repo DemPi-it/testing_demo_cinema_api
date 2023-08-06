@@ -1,9 +1,6 @@
 package models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,4 +10,9 @@ public class ClientModel {
     private Integer id;
     private String phoneNumber;
     private String email;
+
+    public ClientModel(String phoneNumber, String email) {
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+    }
 }

@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f03ea8cf-380d-45cd-9a21-83e7bde6b5b1" name="Changes" comment="created a project, added all dependencies, made all POJO classes">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f03ea8cf-380d-45cd-9a21-83e7bde6b5b1" name="Changes" comment="fixed one endpoint">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/endpoints/Endpoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/endpoints/Endpoints.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,11 +113,20 @@
       <option name="project" value="LOCAL" />
       <updated>1691237434915</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed one endpoint">
+      <option name="closed" value="true" />
+      <created>1691252565737</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691252565738</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created a project, added all dependencies, made all POJO classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="created a project, added all dependencies, made all POJO classes" />
+    <MESSAGE value="fixed one endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed one endpoint" />
   </component>
 </project>
