@@ -17,4 +17,13 @@ public class EmployeeModel {
     private String phoneNumber;
     private String email;
     private String address;
+
+    public EmployeeModel(String firstName, String secondName, String middleName, String phoneNumber, String email, String address) {
+        this.firstName = firstName;
+        this.secondName = secondName;
+        this.middleName = middleName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.address = address;
+    }
 }
