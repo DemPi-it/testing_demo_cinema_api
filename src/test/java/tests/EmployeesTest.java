@@ -1,6 +1,5 @@
 package tests;
 
-import endpoints.Endpoints;
 import models.EmployeeModel;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -8,7 +7,6 @@ import specifications.Specifications;
 
 import java.util.List;
 
-import static endpoints.ControllersEndpoints.Clients;
 import static endpoints.ControllersEndpoints.Employees;
 import static endpoints.Endpoints.*;
 import static specifications.Specifications.installSpecifications;
@@ -46,7 +44,8 @@ public class EmployeesTest {
     @Test
     public void deleteEmployeeByIdTest(){
         installSpecifications(Specifications.requestSpecification(),Specifications.responseSpecificationOK());
-        String message = deleteByIdAndExtractMessage(Employees.getControllerEndpoint(),deleteById.getEndpoint(3));
+        String message = deleteAndExtractMessage(Employees.getControllerEndpoint(),deleteById.getEndpoint(52));
         Assertions.assertEquals("Deleted successful", message);
     }
+
 }

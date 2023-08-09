@@ -51,7 +51,7 @@ public class ClientsTests {
     @Test
     public void deleteByIdTest(){
         installSpecifications(Specifications.requestSpecificationWithContentTypeTextPlain(),Specifications.responseSpecificationOK());
-        String message = deleteByIdAndExtractMessage(Clients.getControllerEndpoint(),deleteById.getEndpoint(402));
+        String message = deleteAndExtractMessage(Clients.getControllerEndpoint(),deleteById.getEndpoint(402));
         Assertions.assertEquals("Deleted successful", message);
     }
 }

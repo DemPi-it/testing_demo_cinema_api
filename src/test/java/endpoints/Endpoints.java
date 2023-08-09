@@ -11,7 +11,8 @@ public enum Endpoints {
     email("/email/"),
     phoneNumber("/phone/"),
     update("/update/"),
-    deleteById("/delete/");
+    deleteByEmail("delete/email/"),
+    deleteById("/delete/id/");
     private final String endpoint;
 
     public String getEndpoint(int id) {

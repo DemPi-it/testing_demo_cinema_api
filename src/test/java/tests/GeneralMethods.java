@@ -21,7 +21,7 @@ public class GeneralMethods<T> {
         return given().when().body(entity).put(controllersEndpoint + endpoint).then().extract().body();
     }
 
-    public static String deleteByIdAndExtractMessage(String controllersEndpoint, String endpoint){
+    public static String deleteAndExtractMessage(String controllersEndpoint, String endpoint){
         return given().when().delete(controllersEndpoint + endpoint).then().extract().body().asString();
     }
 }
