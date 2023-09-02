@@ -15,27 +15,27 @@ import static tests.GeneralMethods.*;
 public class EmployeesTest {
     @Test
     public void getAllEmployeesListTest(){
-        installSpecifications(Specifications.requestSpecification(),Specifications.responseSpecificationOK());
+        installOkSpecs();
         List<EmployeeModel> employees = getListAndExtract(Employees.getControllerEndpoint(), all.getEndpoint())
                 .getList("", EmployeeModel.class);
         Assertions.assertNotNull(employees);
     }
     @Test
     public void getEmployeeByIdTest(){
-        installSpecifications(Specifications.requestSpecification(),Specifications.responseSpecificationOK());
+        installOkSpecs();
         EmployeeModel employee = getSingleAndExtract(Employees.getControllerEndpoint(), getById.getEndpoint(1)).as(EmployeeModel.class);
         Assertions.assertNotNull(employee);
     }
     @Test
     public void getEmployeeByEmailTest(){
-        installSpecifications(Specifications.requestSpecification(),Specifications.responseSpecificationOK());
+        installOkSpecs();
         EmployeeModel employee = getSingleAndExtract(Employees.getControllerEndpoint(), email.getEndpoint("danila@yandex.ru"))
                 .as(EmployeeModel.class);
         Assertions.assertNotNull(employee);
     }
     @Test
     public void postNewEmployeeTest(){
-        installSpecifications(Specifications.requestSpecification(),Specifications.responseSpecificationOK());
+        installOkSpecs();
         EmployeeModel employee = postNewEntityAndExtract(new EmployeeModel("Konstantin", "Vinogradov", "Sergeevich"
                 , "79057773422"
                 , "kostya@yandex.ru"
@@ -43,7 +43,7 @@ public class EmployeesTest {
     }
     @Test
     public void deleteEmployeeByIdTest(){
-        installSpecifications(Specifications.requestSpecification(),Specifications.responseSpecificationOK());
+        installOkSpecs();
         String message = deleteAndExtractMessage(Employees.getControllerEndpoint(),deleteById.getEndpoint(52));
         Assertions.assertEquals("Deleted successful", message);
     }

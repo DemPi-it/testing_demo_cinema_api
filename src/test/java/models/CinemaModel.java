@@ -14,4 +14,10 @@ public class CinemaModel {
     private String cinemaName;
     private String address;
     private String phoneNumber;
+
+    public CinemaModel(String cinemaName, String address, String phoneNumber) {
+        this.cinemaName = cinemaName;
+        this.address = address;
+        this.phoneNumber = phoneNumber;
+    }
 }

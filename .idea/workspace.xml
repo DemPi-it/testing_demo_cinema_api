@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f03ea8cf-380d-45cd-9a21-83e7bde6b5b1" name="Changes" comment="Started work with testing employee controller">
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/EmployeesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/EmployeesTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="f03ea8cf-380d-45cd-9a21-83e7bde6b5b1" name="Changes" comment="almost finished work with EmployeesTest and changed some endpoints" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,7 +48,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.EmployeesTest.deleteEmployeeByIdTest">
+  <component name="RunManager" selected="Gradle.EmployeesTest.deleteEmployeeByEmailTest">
     <configuration name="ClientsTests.getClientsByEmail" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -65,6 +63,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;tests.ClientsTests.getClientsByEmail&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="EmployeesTest.deleteEmployeeByEmailTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;tests.EmployeesTest.deleteEmployeeByEmailTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -123,30 +145,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="EmployeesTest.getEmployeeById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;tests.EmployeesTest.getEmployeeById&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="EmployeesTest.postNewEmployeeTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -173,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.EmployeesTest.deleteEmployeeByIdTest" />
+        <item itemvalue="Gradle.EmployeesTest.deleteEmployeeByEmailTest" />
         <item itemvalue="Gradle.EmployeesTest.postNewEmployeeTest" />
+        <item itemvalue="Gradle.EmployeesTest.deleteEmployeeByIdTest" />
         <item itemvalue="Gradle.EmployeesTest.getEmployeeByEmailTest" />
         <item itemvalue="Gradle.ClientsTests.getClientsByEmail" />
-        <item itemvalue="Gradle.EmployeesTest.getEmployeeById" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691413207075</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="almost finished work with EmployeesTest and changed some endpoints">
+      <option name="closed" value="true" />
+      <created>1691591655388</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691591655389</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -239,6 +245,7 @@
     <MESSAGE value="Were made tests for Client controller and Specifications class" />
     <MESSAGE value="Optimized some basic methods with making GeneralMethods class" />
     <MESSAGE value="Started work with testing employee controller" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started work with testing employee controller" />
+    <MESSAGE value="almost finished work with EmployeesTest and changed some endpoints" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost finished work with EmployeesTest and changed some endpoints" />
   </component>
 </project>
